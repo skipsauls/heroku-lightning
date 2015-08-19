@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Node Sample App</title>
-
-	<!-- CSS -->
-	<!-- load bootstrap and our own personal stylesheet -->
-	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
-
-<div class="container">
-	<div class="jumbotron">
-		<h1>This Is Heroku Awesome!</h1>
-		<p>This is the sample of a tutorial on <a href="http://scotch.io">scotch.io</a></p>
-		<a href="http://scotch.io/tutorials/" class="btn btn-primary btn-lg">View the Tutorial</a>
-	</div>
-</div>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Lightning on Heroku</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Lightning Out on Heroku</h1>
+				<a href="#" class="btn btn-primary btn-lg" onclick="forceLogin()">Login to Salesforce</a>
+				<a href="#" class="btn btn-primary btn-lg" onclick="createChatterFeed()">Create Chatter Feed</a>
+			</div>
+			<div id="chatterFeed"/>
+		</div>
+		<script>
+			var config = {
+				appId: "<%= appId %>",
+				loApp: "<%= loApp %>"
+			};
+			console.warn("config: ", config);
+		</script>
+		<script src="./javascripts/force.oauth.js"/>
+		<script src="./javascripts/app.js"/>
+		<script src="https://gs0.salesforce.com/lightning/lightning.out.js"/>
+	</body>
 </html>

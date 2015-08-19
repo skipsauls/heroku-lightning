@@ -1,4 +1,4 @@
-heroku-node
-===========
+heroku-lightning
+================
 
-Code for the tutorial by @sevilayha: Deploying Node Apps to Heroku
+Simple tutorial for using Lightning Out with Node.js on Heroku

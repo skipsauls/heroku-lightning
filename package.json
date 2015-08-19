@@ -1,12 +1,12 @@
 {
-  "name": "node-sample",
-  "description": "Our sample Node to Heroku app",
+  "name": "heroku-lightning",
+  "description": "Simple tutorial for using Lightning Out with Node.js on Heroku",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "ejs": "~1.0.0",
+    "ejs": "~2.3.3",
     "express": "~4.9.8"
   }
 }
