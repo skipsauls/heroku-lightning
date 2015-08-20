@@ -31,3 +31,6 @@ node_modules
 
 # Keys & Certs
 *.pem
+
+# Env files for localhost
+*.env
