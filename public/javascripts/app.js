@@ -7,6 +7,7 @@ function forceLogin(key) {
 	forceInit();
 	force.login(function(success) {
 		var oauth = force.getOauth();
+		setupLightning();
 	});	
 }
 
@@ -31,6 +32,7 @@ function setupLightning(callback) {
 	    $Lightning.use(appName, 
 	        function() {
 				_lightningReady = true;
+				document.getElementById("chatterFeedButton").style.display = "";
 				if (typeof callback === "function") {
 					callback();
 				}
