@@ -12,10 +12,16 @@
 				<button class="btn btn-primary btn-lg" onclick="forceLogin()">
 					Login to Salesforce
 				</button>
-				<button id="chatterFeedButton" class="btn btn-primary btn-lg" 
-						onclick="createChatterFeed('NEWS')" style="display: none">
-					Create Chatter Feed
-				</button>
+				<div id="controls" style="display: none">
+					<button id="chatterFeedButton" class="btn btn-primary btn-lg" 
+							onclick="createChatterFeed('NEWS')">
+						Create Chatter Feed
+					</button>
+					<button id="chartjsButton" class="btn btn-primary btn-lg" 
+							onclick="createChartjs("chartjsSampleLineChartDataProvider", "Monthly Data Analysis")">
+						Create Chatter Feed
+					</button>
+				</div>
 			</div>
 			<div id="chatterFeed"/>
 		</div>
