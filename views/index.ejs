@@ -12,16 +12,10 @@
 				<button class="btn btn-primary btn-lg" onclick="forceLogin()">
 					Login to Salesforce
 				</button>
-				<div id="controls" style="display: none">
-					<button id="chatterFeedButton" class="btn btn-primary btn-lg" 
-							onclick="createChatterFeed('NEWS')">
-						Create Chatter Feed
-					</button>
-					<button id="chartjsButton" class="btn btn-primary btn-lg" 
-							onclick="createChartjs("chartjsSampleLineChartDataProvider", "Monthly Data Analysis")">
-						Create Chatter Feed
-					</button>
-				</div>
+				<button id="chatterFeedButton" class="btn btn-primary btn-lg" 
+						onclick="createChatterFeed('NEWS')" style="display: none">
+					Create Chatter Feed
+				</button>
 			</div>
 			<div id="chatterFeed"/>
 		</div>
@@ -33,6 +27,6 @@
 		</script>
 		<script src="./javascripts/force.oauth.js"></script>
 		<script src="./javascripts/app.js"></script>
-		<script src="https://gs0.salesforce.com/lightning/lightning.out.js"></script>
+		<script src="https://ltngout-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
 	</body>
 </html>

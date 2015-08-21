@@ -5,11 +5,9 @@ var fs = require('fs');
 var env = require('node-env-file');
 
 // Load environment variables for localhost
-env(__dirname + '/.env');
-
-for (var k in process.env) {
-	console.warn(k, ": ", process.env[k]);
-}
+try {
+	env(__dirname + '/.env');
+} catch (e) {}
 
 var app = express();
 
