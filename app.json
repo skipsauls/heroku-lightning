@@ -1,0 +1,17 @@
+{
+  "name": "Lightning Out",
+  "description": "Simple tutorial for using Lightning Out with Node.js on Heroku",
+  "keywords": [
+    "salesforce",
+    "lightning"
+  ],
+  "repository": "https://github.com/skipsauls/heroku-lightning",
+  "env": {
+    "APPID": {
+      "description": "Connected App Consumer Key"
+    },
+    "LOAPP": {
+      "description": "Name of the Lightning App"
+    }
+  }
+}
